@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game GSCVersion="0.10.5" PGFVersion="0.19" title="Whackathon">
+  <tags />
+  <resolutionIndependence>0</resolutionIndependence>
+  <instructions>Add game instructions here.</instructions>
+  <resolution>7</resolution>
+  <longDescription>A simple game.</longDescription>
+  <prototypes>
+    <actor id="id239541" />
+    <actor id="id217155" />
+    <actor id="id797523" />
+    <actor id="id317598" />
+  </prototypes>
+  <plugins />
+  <scenes>
+    <scene id="id935412" />
+    <scene id="id549964" />
+    <scene id="id755125" />
+  </scenes>
+  <attributes>
+    <text id="name">default name</text>
+    <real id="time">0</real>
+    <size id="displaySize">
+      <real id="width">480</real>
+      <real id="height">320</real>
+    </size>
+    <text id="actorTags" />
+  </attributes>
+</game>
