@@ -1,29 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <game GSCVersion="0.10.5" PGFVersion="0.19" title="Whackathon">
   <tags />
-  <resolutionIndependence>0</resolutionIndependence>
+  <resolutionIndependence>1</resolutionIndependence>
   <instructions>Add game instructions here.</instructions>
-  <resolution>7</resolution>
+  <resolution>3</resolution>
   <longDescription>A simple game.</longDescription>
   <prototypes>
-    <actor id="id239541" />
-    <actor id="id217155" />
-    <actor id="id797523" />
-    <actor id="id317598" />
+    <actor id="id360149" />
+    <actor id="id159406" />
+    <actor id="id104966" />
+    <actor id="id983489" />
+    <actor id="id577327" />
+    <actor id="id970757" />
+    <actor id="id435683" />
+    <actor id="id999696" />
+    <actor id="id215092" />
+    <actor id="id178230" />
+    <actor id="id970619" />
+    <actor id="id183443" />
+    <actor id="id245621" />
+    <actor id="id580777" />
+    <actor id="id174337" />
+    <actor id="id780641" />
+    <actor id="id172983" />
+    <actor id="id250865" />
+    <actor id="id210218" />
+    <actor id="id733494" />
+    <actor id="id210755" />
   </prototypes>
   <plugins />
   <scenes>
-    <scene id="id935412" />
-    <scene id="id549964" />
-    <scene id="id755125" />
+    <scene id="id735300" />
+    <scene id="id492024" />
+    <scene id="id442447" />
   </scenes>
   <attributes>
     <text id="name">default name</text>
     <real id="time">0</real>
     <size id="displaySize">
-      <real id="width">480</real>
-      <real id="height">320</real>
+      <real id="width">1024</real>
+      <real id="height">768</real>
     </size>
-    <text id="actorTags" />
+    <text id="actorTags">All</text>
+    <integer id="id187366" name="score">0</integer>
   </attributes>
 </game>

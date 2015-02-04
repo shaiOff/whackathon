@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<scene PGFVersion="0.19" GSCVersion="0.10.5" id="id935412">
+<scene PGFVersion="0.19" GSCVersion="0.10.5" id="id735300">
   <layers>
-    <layer id="id399037">
+    <layer id="id120024">
       <actors>
-        <actor id="id559055" prototype="id217155">
+        <actor id="id188770" prototype="id360149">
           <attributes>
             <point id="position">
-              <real id="x">237.5</real>
-              <real id="y">159</real>
+              <real id="x">676</real>
+              <real id="y">452</real>
             </point>
             <size id="size">
-              <real id="width">464</real>
-              <real id="height">311</real>
+              <real id="width">604</real>
+              <real id="height">598</real>
             </size>
             <angle id="rotation">0</angle>
-            <image id="image">fond-ecran-press-start</image>
           </attributes>
           <aspects>
             <graphics>
@@ -26,66 +25,150 @@
             </physics>
           </aspects>
         </actor>
-        <actor id="id363902" prototype="id797523">
+        <actor id="id469673" prototype="id159406">
           <attributes>
             <point id="position">
-              <real id="x">241</real>
-              <real id="y">80</real>
+              <real id="x">162.5</real>
+              <real id="y">619.5</real>
             </point>
             <size id="size">
-              <real id="width">76</real>
-              <real id="height">30</real>
+              <real id="width">311.004541223279</real>
+              <real id="height">244.570763010398</real>
+            </size>
+            <angle id="rotation">33.4398692057822</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id761793" prototype="id104966">
+          <attributes>
+            <point id="position">
+              <real id="x">360</real>
+              <real id="y">538.5</real>
+            </point>
+            <size id="size">
+              <real id="width">626.945482287195</real>
+              <real id="height">183.494852410366</real>
+            </size>
+            <angle id="rotation">16.209024927808</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id998561" prototype="id983489">
+          <attributes>
+            <point id="position">
+              <real id="x">213.5</real>
+              <real id="y">314.5</real>
+            </point>
+            <size id="size">
+              <real id="width">159</real>
+              <real id="height">79</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
-          <behaviors>
-            <behavior enabled="true" class="RuleBehavior" id="id676309">
-              <attributes>
-                <text id="name">Rule</text>
-                <text id="bundleName">Rule.behavior</text>
-                <real id="compoundConditionKind">0</real>
-              </attributes>
-              <conditions>
-                <condition id="id701321" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
-                  <predicate type="touch" conditionType="pressed">
-                    <attributes />
-                  </predicate>
-                  <attributes>
-                    <text id="name">default name</text>
-                    <index id="conditionType">0</index>
-                  </attributes>
-                </condition>
-              </conditions>
-            </behavior>
-            <behavior enabled="true" class="RuleBehavior" id="id807163">
-              <attributes>
-                <text id="name">Rule</text>
-                <text id="bundleName">Rule.behavior</text>
-                <real id="compoundConditionKind">0</real>
-              </attributes>
-              <conditions>
-                <condition id="id560353" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
-                  <predicate type="touch" conditionType="released">
-                    <attributes />
-                  </predicate>
-                  <attributes>
-                    <text id="name">default name</text>
-                    <index id="conditionType">0</index>
-                  </attributes>
-                </condition>
-              </conditions>
-              <behaviors>
-                <behavior enabled="true" class="ChangeSceneAction" id="id215370">
-                  <attributes>
-                    <text id="name">Change Scene</text>
-                    <text id="bundleName">ChangeScene.behavior</text>
-                    <text id="sceneKey">next</text>
-                    <boolean id="enableAdvertisement">false</boolean>
-                  </attributes>
-                </behavior>
-              </behaviors>
-            </behavior>
-          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id784537" prototype="id577327">
+          <attributes>
+            <point id="position">
+              <real id="x">208</real>
+              <real id="y">128</real>
+            </point>
+            <size id="size">
+              <real id="width">170</real>
+              <real id="height">170</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id227712" prototype="id970757">
+          <attributes>
+            <point id="position">
+              <real id="x">393</real>
+              <real id="y">130</real>
+            </point>
+            <size id="size">
+              <real id="width">232</real>
+              <real id="height">266</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id457784" prototype="id435683">
+          <attributes>
+            <point id="position">
+              <real id="x">578.5</real>
+              <real id="y">163.5</real>
+            </point>
+            <size id="size">
+              <real id="width">158</real>
+              <real id="height">196</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id995256" prototype="id999696">
+          <attributes>
+            <point id="position">
+              <real id="x">790.5</real>
+              <real id="y">181.5</real>
+            </point>
+            <size id="size">
+              <real id="width">417</real>
+              <real id="height">321</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
           <aspects>
             <graphics>
               <attributes />
@@ -107,8 +190,8 @@
     <text id="name">Menu</text>
     <real id="time">0</real>
     <size id="size">
-      <real id="width">480</real>
-      <real id="height">320</real>
+      <real id="width">1024</real>
+      <real id="height">768</real>
     </size>
     <boolean id="wrapX">false</boolean>
     <boolean id="wrapY">false</boolean>
@@ -128,12 +211,12 @@
         <real id="y">0</real>
       </point>
       <size id="size">
-        <real id="width">480</real>
-        <real id="height">320</real>
+        <real id="width">1024</real>
+        <real id="height">768</real>
       </size>
       <size id="trackingArea">
-        <real id="width">400</real>
-        <real id="height">260</real>
+        <real id="width">944</real>
+        <real id="height">708</real>
       </size>
       <real id="rotation">0</real>
     </rect>

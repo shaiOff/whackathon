@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id317598" PGFVersion="0.19" GSCVersion="0.10.5">
+<actor id="id983489" PGFVersion="0.19" GSCVersion="0.10.5">
   <attributes>
-    <text id="name">Actor 7</text>
+    <text id="name">start</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">1491</real>
-      <real id="height">1440</real>
+      <real id="width">160</real>
+      <real id="height">80</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
@@ -18,11 +18,58 @@
       <real id="blue">1</real>
       <real id="alpha">1</real>
     </color>
-    <image id="image">5466619003_6df2d0e9ab_o</image>
+    <image id="image">start</image>
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
   </attributes>
-  <behaviors />
+  <behaviors>
+    <behavior enabled="true" class="RuleBehavior" id="id827780">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id789819" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+          <predicate type="touch" conditionType="pressed">
+            <attributes />
+          </predicate>
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+        </condition>
+      </conditions>
+    </behavior>
+    <behavior enabled="true" class="RuleBehavior" id="id308589">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id716316" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+          <predicate type="touch" conditionType="released">
+            <attributes />
+          </predicate>
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior enabled="true" class="ChangeSceneAction" id="id920512">
+          <attributes>
+            <text id="name">Change Scene</text>
+            <text id="bundleName">ChangeScene.behavior</text>
+            <text id="sceneKey">id492024</text>
+            <boolean id="enableAdvertisement">false</boolean>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+  </behaviors>
   <aspects>
     <graphics>
       <attributes>
@@ -34,8 +81,8 @@
         <enumeration id="verticalAnchor">0</enumeration>
         <boolean id="flipHorizontally">false</boolean>
         <boolean id="flipVertically">false</boolean>
-        <integer id="tileWidth">1491</integer>
-        <integer id="tileHeight">1440</integer>
+        <integer id="tileWidth">160</integer>
+        <integer id="tileHeight">80</integer>
       </attributes>
     </graphics>
     <motion>

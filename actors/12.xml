@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actor id="id183443" PGFVersion="0.19" GSCVersion="0.10.5">
+  <attributes>
+    <text id="name">monster1</text>
+    <real id="time">0</real>
+    <point id="position">
+      <real id="x">0</real>
+      <real id="y">0</real>
+    </point>
+    <size id="size">
+      <real id="width">128</real>
+      <real id="height">128</real>
+    </size>
+    <angle id="rotation">0</angle>
+    <color id="color">
+      <real id="red">1</real>
+      <real id="green">1</real>
+      <real id="blue">1</real>
+      <real id="alpha">1</real>
+    </color>
+    <image id="image">transparent</image>
+    <text id="tags" />
+    <boolean id="preloadArt">true</boolean>
+  </attributes>
+  <behaviors>
+    <behavior enabled="true" class="RuleBehavior" id="id731316">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id443832" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <predicate type="string">
+            <attributes>
+              <text id="operator">is</text>
+              <text id="RHS">transparent</text>
+            </attributes>
+          </predicate>
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.image</text>
+            <text id="name">default name</text>
+          </attributes>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior enabled="true" class="TimerBehavior" id="id870430">
+          <attributes>
+            <text id="name">Timer</text>
+            <text id="bundleName">Timer.behavior</text>
+            <index id="timerType">1</index>
+            <real id="interval">
+              <expression>
+                <string xml:space="preserve">random(1, </string>
+                <string xml:space="preserve">10</string>
+                <string xml:space="preserve">)</string>
+              </expression>
+            </real>
+            <boolean id="runToCompletion">true</boolean>
+          </attributes>
+          <behaviors>
+            <behavior enabled="true" class="ChangeImageAction" id="id988819">
+              <attributes>
+                <text id="name">Change Image</text>
+                <text id="bundleName">ChangeImage.behavior</text>
+                <image id="image">monster 1</image>
+              </attributes>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </behaviors>
+      <elseBehaviors>
+        <behavior enabled="true" class="RuleBehavior" id="id979748">
+          <attributes>
+            <text id="name">Rule</text>
+            <text id="bundleName">Rule.behavior</text>
+            <real id="compoundConditionKind">0</real>
+          </attributes>
+          <conditions>
+            <condition id="id599041" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <predicate type="string">
+                <attributes>
+                  <text id="operator">is</text>
+                  <text id="RHS">monster 1</text>
+                </attributes>
+              </predicate>
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.image</text>
+                <text id="name">default name</text>
+              </attributes>
+            </condition>
+          </conditions>
+          <behaviors>
+            <behavior enabled="true" class="TimerBehavior" id="id433355">
+              <attributes>
+                <text id="name">Timer</text>
+                <text id="bundleName">Timer.behavior</text>
+                <index id="timerType">1</index>
+                <real id="interval">
+                  <expression>
+                    <string xml:space="preserve">random(1, </string>
+                    <string xml:space="preserve">6</string>
+                    <string xml:space="preserve">)</string>
+                  </expression>
+                </real>
+                <boolean id="runToCompletion">true</boolean>
+              </attributes>
+              <behaviors>
+                <behavior enabled="true" class="ChangeImageAction" id="id376931">
+                  <attributes>
+                    <text id="name">Change Image</text>
+                    <text id="bundleName">ChangeImage.behavior</text>
+                    <image id="image">transparent</image>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+        </behavior>
+      </elseBehaviors>
+    </behavior>
+    <behavior enabled="true" class="RuleBehavior" id="id815237">
+      <attributes>
+        <text id="name">Rule</text>
+        <text id="bundleName">Rule.behavior</text>
+        <real id="compoundConditionKind">0</real>
+      </attributes>
+      <conditions>
+        <condition id="id227412" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+          <predicate type="touch" conditionType="pressed">
+            <attributes />
+          </predicate>
+          <attributes>
+            <text id="name">default name</text>
+            <index id="conditionType">0</index>
+          </attributes>
+        </condition>
+        <condition id="id323306" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <predicate type="string">
+            <attributes>
+              <text id="operator">is</text>
+              <text id="RHS">monster 1</text>
+            </attributes>
+          </predicate>
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.image</text>
+            <text id="name">default name</text>
+          </attributes>
+        </condition>
+      </conditions>
+      <behaviors>
+        <behavior enabled="true" class="ChangeAttributeAction" id="id310189">
+          <attributes>
+            <text id="name">Change Attribute</text>
+            <text id="bundleName">ChangeAttribute.behavior</text>
+            <text id="targetAttribute">game.attributes.id187366</text>
+            <text id="RHS">
+              <expression>
+                <reference keypath="game.attributes.id187366" />
+                <string xml:space="preserve">+1</string>
+              </expression>
+            </text>
+          </attributes>
+        </behavior>
+        <behavior enabled="true" class="SpawnAction" id="id929257">
+          <attributes>
+            <text id="name">Spawn Actor</text>
+            <text id="bundleName">Spawn.behavior</text>
+            <text id="prototypeKey">id178230</text>
+            <angle id="direction">0</angle>
+            <index id="directionSpace">0</index>
+            <real id="x">0</real>
+            <real id="y">0</real>
+            <index id="positionSpace">0</index>
+            <index id="layerOrder">0</index>
+          </attributes>
+        </behavior>
+      </behaviors>
+    </behavior>
+  </behaviors>
+  <aspects>
+    <graphics>
+      <attributes>
+        <boolean id="visible">true</boolean>
+        <enumeration id="blendingMode">0</enumeration>
+        <enumeration id="horizontalWrap">0</enumeration>
+        <enumeration id="verticalWrap">0</enumeration>
+        <enumeration id="horizontalAnchor">0</enumeration>
+        <enumeration id="verticalAnchor">0</enumeration>
+        <boolean id="flipHorizontally">false</boolean>
+        <boolean id="flipVertically">false</boolean>
+        <integer id="tileWidth">128</integer>
+        <integer id="tileHeight">128</integer>
+      </attributes>
+    </graphics>
+    <motion>
+      <attributes>
+        <point id="linearVelocity">
+          <real id="x">0</real>
+          <real id="y">0</real>
+        </point>
+        <real id="angularVelocity">0</real>
+        <real id="maxSpeed">0</real>
+        <boolean id="applyMaxSpeed">false</boolean>
+      </attributes>
+    </motion>
+    <physics>
+      <attributes>
+        <real id="density">1</real>
+        <real id="friction">3</real>
+        <real id="restitution">1</real>
+        <boolean id="fixedRotation">false</boolean>
+        <boolean id="movable">true</boolean>
+        <enumeration id="collisionShape">0</enumeration>
+        <real id="drag">0</real>
+        <real id="angularDrag">0</real>
+      </attributes>
+    </physics>
+  </aspects>
+</actor>

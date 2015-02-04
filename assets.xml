@@ -2,71 +2,41 @@
 <assets PGFVersion="0.19" GSCVersion="0.10.5">
   <sounds />
   <images>
-    <image name="2833011scyujmgste">
-      <file name="2833011scyujmgste.png" size="158405" />
+    <image name="game over">
+      <file name="game over.png" size="835996" />
     </image>
-    <image name="8546580-large-slice-of-good-swiss-cheese-with-holes">
-      <file name="8546580-large-slice-of-good-swiss-cheese-with-holes.png" size="32211" />
+    <image name="in game">
+      <file name="in game.png" size="131996" />
     </image>
-    <image name="38082352">
-      <file name="38082352.png" size="48901" />
+    <image name="menu">
+      <file name="menu.png" size="333254" />
     </image>
-    <image name="38111155">
-      <file name="38111155.png" size="37050" />
+    <image name="monster 1">
+      <file name="monster 1.png" size="172334" />
     </image>
-    <image name="587264602">
-      <file name="587264602.png" size="278624" />
+    <image name="monster 2">
+      <file name="monster 2.png" size="139605" />
     </image>
-    <image name="anime-chibi-cat-drawings-i17">
-      <file name="anime-chibi-cat-drawings-i17.png" size="105027" />
+    <image name="monster 3">
+      <file name="monster 3.png" size="169775" />
     </image>
-    <image name="bacteria-virus-cartoon-eps-file-simple-gradients-all-separate-group-easy-editing-34485199">
-      <file name="bacteria-virus-cartoon-eps-file-simple-gradients-all-separate-group-easy-editing-34485199.png" size="1477585" />
+    <image name="monster 4">
+      <file name="monster 4.png" size="91554" />
     </image>
-    <image name="cartoon_rat_silver_blaze_acrylic_cut_outs-rac67aa45b55d46f68ca474803bfa0714_x7sai_8byvr_512">
-      <file name="cartoon_rat_silver_blaze_acrylic_cut_outs-rac67aa45b55d46f68ca474803bfa0714_x7sai_8byvr_512.png" size="135234" />
-    </image>
-    <image name="cartoon-cheese-5">
-      <file name="cartoon-cheese-5.png" size="11442" />
-    </image>
-    <image name="cheese-hi">
-      <file name="cheese-hi.png" size="36075" />
-    </image>
-    <image name="chibi_png_by_noreenmoreno-d6night">
-      <file name="chibi_png_by_noreenmoreno-d6night.png" size="591286" />
-    </image>
-    <image name="Chibi-Ichigo-bleach-anime-33253006-392-500">
-      <file name="Chibi-Ichigo-bleach-anime-33253006-392-500.png" size="121675" />
-    </image>
-    <image name="cj7_squiby_by_toonfreak-d2zcp59">
-      <file name="cj7_squiby_by_toonfreak-d2zcp59.png" size="18307" />
-    </image>
-    <image name="images">
-      <file name="images.png" size="53927" />
-    </image>
-    <image name="mlp_chibi_anime_by_morganluvstacos-d5texs3">
-      <file name="mlp_chibi_anime_by_morganluvstacos-d5texs3.png" size="267756" />
-    </image>
-    <image name="shot_1279037980">
-      <file name="shot_1279037980.png" size="24766" />
-    </image>
-    <image name="simple_cartoon_mouse_clip_art_6764">
-      <file name="simple_cartoon_mouse_clip_art_6764.png" size="76610" />
-    </image>
-    <image name="fond-ecran-press-start">
-      <file name="fond-ecran-press-start.png" size="6241" />
-    </image>
-    <image name="play1">
-      <file name="play1.png" size="22781" />
-    </image>
-    <image name="play2">
-      <file name="play2.png" size="19461" />
+    <image name="play again">
+      <file name="play again.png" size="4728" />
     </image>
     <image name="start">
       <file name="start.png" size="4463" />
     </image>
-    <image name="5466619003_6df2d0e9ab_o">
-      <file name="5466619003_6df2d0e9ab_o.png" size="835996" />
+    <image name="title">
+      <file name="title.png" size="142359" />
+    </image>
+    <image name="whack">
+      <file name="whack.png" size="337086" />
+    </image>
+    <image name="transparent">
+      <file name="transparent.png" size="47955" />
     </image>
   </images>
   <behaviors />

@@ -1,31 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<scene PGFVersion="0.19" GSCVersion="0.10.5" id="id755125">
+<scene PGFVersion="0.19" GSCVersion="0.10.5" id="id442447">
   <layers>
-    <layer id="id525307">
-      <actors>
-        <actor id="id769294" prototype="id317598">
-          <attributes>
-            <point id="position">
-              <real id="x">238</real>
-              <real id="y">155.5</real>
-            </point>
-            <size id="size">
-              <real id="width">477</real>
-              <real id="height">373</real>
-            </size>
-            <angle id="rotation">0</angle>
-          </attributes>
-          <aspects>
-            <graphics>
-              <attributes />
-            </graphics>
-            <motion />
-            <physics>
-              <attributes />
-            </physics>
-          </aspects>
-        </actor>
-      </actors>
+    <layer id="id653821">
+      <actors />
       <attributes>
         <text id="name">Background</text>
         <boolean id="scrollable">true</boolean>
@@ -36,8 +13,8 @@
     <text id="name">Game Over</text>
     <real id="time">0</real>
     <size id="size">
-      <real id="width">480</real>
-      <real id="height">320</real>
+      <real id="width">1024</real>
+      <real id="height">768</real>
     </size>
     <boolean id="wrapX">false</boolean>
     <boolean id="wrapY">false</boolean>
@@ -57,12 +34,12 @@
         <real id="y">0</real>
       </point>
       <size id="size">
-        <real id="width">480</real>
-        <real id="height">320</real>
+        <real id="width">1024</real>
+        <real id="height">768</real>
       </size>
       <size id="trackingArea">
-        <real id="width">400</real>
-        <real id="height">260</real>
+        <real id="width">944</real>
+        <real id="height">708</real>
       </size>
       <real id="rotation">0</real>
     </rect>

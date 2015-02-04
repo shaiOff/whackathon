@@ -1,17 +1,1684 @@
 <?xml version="1.0" encoding="utf-8"?>
-<scene PGFVersion="0.19" GSCVersion="0.10.5" id="id549964">
+<scene PGFVersion="0.19" GSCVersion="0.10.5" id="id492024">
   <layers>
-    <layer id="id101348">
+    <layer id="id132521">
       <actors>
-        <actor id="id528034" prototype="id239541">
+        <actor id="id213204" prototype="id215092">
           <attributes>
             <point id="position">
-              <real id="x">232</real>
-              <real id="y">156</real>
+              <real id="x">510</real>
+              <real id="y">383.5</real>
             </point>
             <size id="size">
-              <real id="width">507</real>
-              <real id="height">355</real>
+              <real id="width">943</real>
+              <real id="height">707</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <image id="image">in game</image>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id264470" prototype="id183443">
+          <attributes>
+            <point id="position">
+              <real id="x">408.5</real>
+              <real id="y">469.054726368159</real>
+            </point>
+            <size id="size">
+              <real id="width">133</real>
+              <real id="height">126</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id231803" prototype="id970619">
+          <attributes>
+            <point id="position">
+              <real id="x">192.5</real>
+              <real id="y">693.554726368159</real>
+            </point>
+            <size id="size">
+              <real id="width">95</real>
+              <real id="height">89</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id428357" prototype="id245621">
+          <attributes>
+            <point id="position">
+              <real id="x">192</real>
+              <real id="y">554.532338308458</real>
+            </point>
+            <size id="size">
+              <real id="width">106</real>
+              <real id="height">102</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id606902" prototype="id183443">
+          <attributes>
+            <point id="position">
+              <real id="x">194.5</real>
+              <real id="y">558.032338308458</real>
+            </point>
+            <size id="size">
+              <real id="width">103</real>
+              <real id="height">101</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">monster3</text>
+          </attributes>
+          <behaviors>
+            <behavior enabled="true" class="RuleBehavior" id="id728289">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id630553" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">transparent</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="TimerBehavior" id="id441215">
+                  <attributes>
+                    <text id="name">Timer</text>
+                    <text id="bundleName">Timer.behavior</text>
+                    <index id="timerType">1</index>
+                    <real id="interval">
+                      <expression>
+                        <string xml:space="preserve">random(1, 10)</string>
+                      </expression>
+                    </real>
+                    <boolean id="runToCompletion">true</boolean>
+                  </attributes>
+                  <behaviors>
+                    <behavior enabled="true" class="ChangeImageAction" id="id173462">
+                      <attributes>
+                        <text id="name">Change Image</text>
+                        <text id="bundleName">ChangeImage.behavior</text>
+                        <image id="image">monster 3</image>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior enabled="true" class="RuleBehavior" id="id331143">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id206426" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <predicate type="string">
+                        <attributes>
+                          <text id="operator">is</text>
+                          <text id="RHS">monster 3</text>
+                        </attributes>
+                      </predicate>
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior enabled="true" class="TimerBehavior" id="id179983">
+                      <attributes>
+                        <text id="name">Timer</text>
+                        <text id="bundleName">Timer.behavior</text>
+                        <index id="timerType">1</index>
+                        <real id="interval">
+                          <expression>
+                            <string xml:space="preserve">random(1, 6)</string>
+                          </expression>
+                        </real>
+                        <boolean id="runToCompletion">true</boolean>
+                      </attributes>
+                      <behaviors>
+                        <behavior enabled="true" class="ChangeImageAction" id="id448574">
+                          <attributes>
+                            <text id="name">Change Image</text>
+                            <text id="bundleName">ChangeImage.behavior</text>
+                            <image id="image">transparent</image>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+            <behavior enabled="true" class="RuleBehavior" id="id892952">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id728007" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                </condition>
+                <condition id="id918568" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">monster 3</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="ChangeAttributeAction" id="id317385">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id187366</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id187366" />
+                        <string xml:space="preserve">+1</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior enabled="true" class="SpawnAction" id="id998744">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id178230</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">0</real>
+                    <real id="y">0</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id929522" prototype="id580777">
+          <attributes>
+            <point id="position">
+              <real id="x">340.5</real>
+              <real id="y">169</real>
+            </point>
+            <size id="size">
+              <real id="width">99</real>
+              <real id="height">90</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id371759" prototype="id183443">
+          <attributes>
+            <point id="position">
+              <real id="x">341</real>
+              <real id="y">175.5</real>
+            </point>
+            <size id="size">
+              <real id="width">106</real>
+              <real id="height">99</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">monster4</text>
+          </attributes>
+          <behaviors>
+            <behavior enabled="true" class="RuleBehavior" id="id123349">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id110514" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">transparent</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="TimerBehavior" id="id363547">
+                  <attributes>
+                    <text id="name">Timer</text>
+                    <text id="bundleName">Timer.behavior</text>
+                    <index id="timerType">1</index>
+                    <real id="interval">
+                      <expression>
+                        <string xml:space="preserve">random(1, 10)</string>
+                      </expression>
+                    </real>
+                    <boolean id="runToCompletion">true</boolean>
+                  </attributes>
+                  <behaviors>
+                    <behavior enabled="true" class="ChangeImageAction" id="id565984">
+                      <attributes>
+                        <text id="name">Change Image</text>
+                        <text id="bundleName">ChangeImage.behavior</text>
+                        <image id="image">monster 4</image>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior enabled="true" class="RuleBehavior" id="id526301">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id299998" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <predicate type="string">
+                        <attributes>
+                          <text id="operator">is</text>
+                          <text id="RHS">monster 4</text>
+                        </attributes>
+                      </predicate>
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior enabled="true" class="TimerBehavior" id="id485648">
+                      <attributes>
+                        <text id="name">Timer</text>
+                        <text id="bundleName">Timer.behavior</text>
+                        <index id="timerType">1</index>
+                        <real id="interval">
+                          <expression>
+                            <string xml:space="preserve">random(1, 6)</string>
+                          </expression>
+                        </real>
+                        <boolean id="runToCompletion">true</boolean>
+                      </attributes>
+                      <behaviors>
+                        <behavior enabled="true" class="ChangeImageAction" id="id867783">
+                          <attributes>
+                            <text id="name">Change Image</text>
+                            <text id="bundleName">ChangeImage.behavior</text>
+                            <image id="image">transparent</image>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+            <behavior enabled="true" class="RuleBehavior" id="id307483">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id490485" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                </condition>
+                <condition id="id676889" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">monster 4</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="ChangeAttributeAction" id="id987485">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id187366</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id187366" />
+                        <string xml:space="preserve">+1</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior enabled="true" class="SpawnAction" id="id124226">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id178230</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">0</real>
+                    <real id="y">0</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id300870" prototype="id174337">
+          <attributes>
+            <point id="position">
+              <real id="x">797.5</real>
+              <real id="y">173.713930348259</real>
+            </point>
+            <size id="size">
+              <real id="width">99</real>
+              <real id="height">93</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id533232" prototype="id183443">
+          <attributes>
+            <point id="position">
+              <real id="x">798</real>
+              <real id="y">166.713930348259</real>
+            </point>
+            <size id="size">
+              <real id="width">108</real>
+              <real id="height">107</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">monster5</text>
+          </attributes>
+          <behaviors>
+            <behavior enabled="true" class="RuleBehavior" id="id764955">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id635433" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">transparent</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="TimerBehavior" id="id874081">
+                  <attributes>
+                    <text id="name">Timer</text>
+                    <text id="bundleName">Timer.behavior</text>
+                    <index id="timerType">1</index>
+                    <real id="interval">
+                      <expression>
+                        <string xml:space="preserve">random(1, 10)</string>
+                      </expression>
+                    </real>
+                    <boolean id="runToCompletion">true</boolean>
+                  </attributes>
+                  <behaviors>
+                    <behavior enabled="true" class="ChangeImageAction" id="id933350">
+                      <attributes>
+                        <text id="name">Change Image</text>
+                        <text id="bundleName">ChangeImage.behavior</text>
+                        <image id="image">monster 1</image>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior enabled="true" class="RuleBehavior" id="id644748">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id817429" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <predicate type="string">
+                        <attributes>
+                          <text id="operator">is</text>
+                          <text id="RHS">monster 1</text>
+                        </attributes>
+                      </predicate>
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior enabled="true" class="TimerBehavior" id="id589113">
+                      <attributes>
+                        <text id="name">Timer</text>
+                        <text id="bundleName">Timer.behavior</text>
+                        <index id="timerType">1</index>
+                        <real id="interval">
+                          <expression>
+                            <string xml:space="preserve">random(1, 6)</string>
+                          </expression>
+                        </real>
+                        <boolean id="runToCompletion">true</boolean>
+                      </attributes>
+                      <behaviors>
+                        <behavior enabled="true" class="ChangeImageAction" id="id786419">
+                          <attributes>
+                            <text id="name">Change Image</text>
+                            <text id="bundleName">ChangeImage.behavior</text>
+                            <image id="image">transparent</image>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+            <behavior enabled="true" class="RuleBehavior" id="id877589">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id112450" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                </condition>
+                <condition id="id421437" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">monster 1</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="ChangeAttributeAction" id="id357646">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id187366</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id187366" />
+                        <string xml:space="preserve">+1</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior enabled="true" class="SpawnAction" id="id856009">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id178230</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">0</real>
+                    <real id="y">0</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id741147" prototype="id780641">
+          <attributes>
+            <point id="position">
+              <real id="x">675.5</real>
+              <real id="y">368.213930348259</real>
+            </point>
+            <size id="size">
+              <real id="width">131</real>
+              <real id="height">132</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id300254" prototype="id183443">
+          <attributes>
+            <point id="position">
+              <real id="x">677</real>
+              <real id="y">364.213930348259</real>
+            </point>
+            <size id="size">
+              <real id="width">134</real>
+              <real id="height">134</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">monster6</text>
+          </attributes>
+          <behaviors>
+            <behavior enabled="true" class="RuleBehavior" id="id752679">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id618399" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">transparent</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="TimerBehavior" id="id663746">
+                  <attributes>
+                    <text id="name">Timer</text>
+                    <text id="bundleName">Timer.behavior</text>
+                    <index id="timerType">1</index>
+                    <real id="interval">
+                      <expression>
+                        <string xml:space="preserve">random(1, 10)</string>
+                      </expression>
+                    </real>
+                    <boolean id="runToCompletion">true</boolean>
+                  </attributes>
+                  <behaviors>
+                    <behavior enabled="true" class="ChangeImageAction" id="id655642">
+                      <attributes>
+                        <text id="name">Change Image</text>
+                        <text id="bundleName">ChangeImage.behavior</text>
+                        <image id="image">monster 2</image>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior enabled="true" class="RuleBehavior" id="id488513">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id587393" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <predicate type="string">
+                        <attributes>
+                          <text id="operator">is</text>
+                          <text id="RHS">monster 2</text>
+                        </attributes>
+                      </predicate>
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior enabled="true" class="TimerBehavior" id="id157662">
+                      <attributes>
+                        <text id="name">Timer</text>
+                        <text id="bundleName">Timer.behavior</text>
+                        <index id="timerType">1</index>
+                        <real id="interval">
+                          <expression>
+                            <string xml:space="preserve">random(1, 6)</string>
+                          </expression>
+                        </real>
+                        <boolean id="runToCompletion">true</boolean>
+                      </attributes>
+                      <behaviors>
+                        <behavior enabled="true" class="ChangeImageAction" id="id955406">
+                          <attributes>
+                            <text id="name">Change Image</text>
+                            <text id="bundleName">ChangeImage.behavior</text>
+                            <image id="image">transparent</image>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+            <behavior enabled="true" class="RuleBehavior" id="id193440">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id344405" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                </condition>
+                <condition id="id143902" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">monster 2</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="ChangeAttributeAction" id="id896764">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id187366</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id187366" />
+                        <string xml:space="preserve">+1</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior enabled="true" class="SpawnAction" id="id798091">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id178230</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">0</real>
+                    <real id="y">0</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id749632" prototype="id172983">
+          <attributes>
+            <point id="position">
+              <real id="x">726</real>
+              <real id="y">594</real>
+            </point>
+            <size id="size">
+              <real id="width">138</real>
+              <real id="height">136</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id974954" prototype="id183443">
+          <attributes>
+            <point id="position">
+              <real id="x">726</real>
+              <real id="y">597.5</real>
+            </point>
+            <size id="size">
+              <real id="width">140</real>
+              <real id="height">141</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">monster7</text>
+          </attributes>
+          <behaviors>
+            <behavior enabled="true" class="RuleBehavior" id="id577337">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id728782" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">transparent</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="TimerBehavior" id="id428201">
+                  <attributes>
+                    <text id="name">Timer</text>
+                    <text id="bundleName">Timer.behavior</text>
+                    <index id="timerType">1</index>
+                    <real id="interval">
+                      <expression>
+                        <string xml:space="preserve">random(1, 10)</string>
+                      </expression>
+                    </real>
+                    <boolean id="runToCompletion">true</boolean>
+                  </attributes>
+                  <behaviors>
+                    <behavior enabled="true" class="ChangeImageAction" id="id642818">
+                      <attributes>
+                        <text id="name">Change Image</text>
+                        <text id="bundleName">ChangeImage.behavior</text>
+                        <image id="image">monster 3</image>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior enabled="true" class="RuleBehavior" id="id850238">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id339343" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <predicate type="string">
+                        <attributes>
+                          <text id="operator">is</text>
+                          <text id="RHS">monster 3</text>
+                        </attributes>
+                      </predicate>
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior enabled="true" class="TimerBehavior" id="id888802">
+                      <attributes>
+                        <text id="name">Timer</text>
+                        <text id="bundleName">Timer.behavior</text>
+                        <index id="timerType">1</index>
+                        <real id="interval">
+                          <expression>
+                            <string xml:space="preserve">random(1, 6)</string>
+                          </expression>
+                        </real>
+                        <boolean id="runToCompletion">true</boolean>
+                      </attributes>
+                      <behaviors>
+                        <behavior enabled="true" class="ChangeImageAction" id="id747494">
+                          <attributes>
+                            <text id="name">Change Image</text>
+                            <text id="bundleName">ChangeImage.behavior</text>
+                            <image id="image">transparent</image>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+            <behavior enabled="true" class="RuleBehavior" id="id384314">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id470236" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                </condition>
+                <condition id="id673450" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">monster 3</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="ChangeAttributeAction" id="id128808">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id187366</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id187366" />
+                        <string xml:space="preserve">+1</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior enabled="true" class="SpawnAction" id="id297097">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id178230</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">0</real>
+                    <real id="y">0</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id572579" prototype="id250865">
+          <attributes>
+            <point id="position">
+              <real id="x">848</real>
+              <real id="y">462</real>
+            </point>
+            <size id="size">
+              <real id="width">114</real>
+              <real id="height">110</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id731684" prototype="id210218">
+          <attributes>
+            <point id="position">
+              <real id="x">524</real>
+              <real id="y">654.5</real>
+            </point>
+            <size id="size">
+              <real id="width">100</real>
+              <real id="height">97</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id422119" prototype="id183443">
+          <attributes>
+            <point id="position">
+              <real id="x">848.5</real>
+              <real id="y">460.5</real>
+            </point>
+            <size id="size">
+              <real id="width">115</real>
+              <real id="height">109</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">monster8</text>
+          </attributes>
+          <behaviors>
+            <behavior enabled="true" class="RuleBehavior" id="id287943">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id896243" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">transparent</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="TimerBehavior" id="id967117">
+                  <attributes>
+                    <text id="name">Timer</text>
+                    <text id="bundleName">Timer.behavior</text>
+                    <index id="timerType">1</index>
+                    <real id="interval">
+                      <expression>
+                        <string xml:space="preserve">random(1, 10)</string>
+                      </expression>
+                    </real>
+                    <boolean id="runToCompletion">true</boolean>
+                  </attributes>
+                  <behaviors>
+                    <behavior enabled="true" class="ChangeImageAction" id="id148121">
+                      <attributes>
+                        <text id="name">Change Image</text>
+                        <text id="bundleName">ChangeImage.behavior</text>
+                        <image id="image">monster 4</image>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior enabled="true" class="RuleBehavior" id="id411141">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id629179" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <predicate type="string">
+                        <attributes>
+                          <text id="operator">is</text>
+                          <text id="RHS">monster 4</text>
+                        </attributes>
+                      </predicate>
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior enabled="true" class="TimerBehavior" id="id272065">
+                      <attributes>
+                        <text id="name">Timer</text>
+                        <text id="bundleName">Timer.behavior</text>
+                        <index id="timerType">1</index>
+                        <real id="interval">
+                          <expression>
+                            <string xml:space="preserve">random(1, 6)</string>
+                          </expression>
+                        </real>
+                        <boolean id="runToCompletion">true</boolean>
+                      </attributes>
+                      <behaviors>
+                        <behavior enabled="true" class="ChangeImageAction" id="id233134">
+                          <attributes>
+                            <text id="name">Change Image</text>
+                            <text id="bundleName">ChangeImage.behavior</text>
+                            <image id="image">transparent</image>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+            <behavior enabled="true" class="RuleBehavior" id="id165121">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id937368" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                </condition>
+                <condition id="id489890" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">monster 4</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="ChangeAttributeAction" id="id699373">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id187366</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id187366" />
+                        <string xml:space="preserve">+1</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior enabled="true" class="SpawnAction" id="id645364">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id178230</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">0</real>
+                    <real id="y">0</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id977168" prototype="id183443">
+          <attributes>
+            <point id="position">
+              <real id="x">524</real>
+              <real id="y">667.5</real>
+            </point>
+            <size id="size">
+              <real id="width">100</real>
+              <real id="height">93</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">monster9</text>
+          </attributes>
+          <behaviors>
+            <behavior enabled="true" class="RuleBehavior" id="id795144">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id621151" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">transparent</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="TimerBehavior" id="id371935">
+                  <attributes>
+                    <text id="name">Timer</text>
+                    <text id="bundleName">Timer.behavior</text>
+                    <index id="timerType">1</index>
+                    <real id="interval">
+                      <expression>
+                        <string xml:space="preserve">random(1, 10)</string>
+                      </expression>
+                    </real>
+                    <boolean id="runToCompletion">true</boolean>
+                  </attributes>
+                  <behaviors>
+                    <behavior enabled="true" class="ChangeImageAction" id="id313974">
+                      <attributes>
+                        <text id="name">Change Image</text>
+                        <text id="bundleName">ChangeImage.behavior</text>
+                        <image id="image">monster 2</image>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior enabled="true" class="RuleBehavior" id="id490888">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id469642" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <predicate type="string">
+                        <attributes>
+                          <text id="operator">is</text>
+                          <text id="RHS">monster 2</text>
+                        </attributes>
+                      </predicate>
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior enabled="true" class="TimerBehavior" id="id153635">
+                      <attributes>
+                        <text id="name">Timer</text>
+                        <text id="bundleName">Timer.behavior</text>
+                        <index id="timerType">1</index>
+                        <real id="interval">
+                          <expression>
+                            <string xml:space="preserve">random(1, 6)</string>
+                          </expression>
+                        </real>
+                        <boolean id="runToCompletion">true</boolean>
+                      </attributes>
+                      <behaviors>
+                        <behavior enabled="true" class="ChangeImageAction" id="id961466">
+                          <attributes>
+                            <text id="name">Change Image</text>
+                            <text id="bundleName">ChangeImage.behavior</text>
+                            <image id="image">transparent</image>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+            <behavior enabled="true" class="RuleBehavior" id="id776753">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id810140" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                </condition>
+                <condition id="id603299" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">monster 2</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="ChangeAttributeAction" id="id182688">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id187366</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id187366" />
+                        <string xml:space="preserve">+1</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior enabled="true" class="SpawnAction" id="id132311">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id178230</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">0</real>
+                    <real id="y">0</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id267940" prototype="id733494">
+          <attributes>
+            <point id="position">
+              <real id="x">180</real>
+              <real id="y">240</real>
+            </point>
+            <size id="size">
+              <real id="width">128</real>
+              <real id="height">128</real>
+            </size>
+            <angle id="rotation">0</angle>
+          </attributes>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id771856" prototype="id183443">
+          <attributes>
+            <point id="position">
+              <real id="x">189</real>
+              <real id="y">268</real>
+            </point>
+            <size id="size">
+              <real id="width">156</real>
+              <real id="height">152</real>
+            </size>
+            <angle id="rotation">0</angle>
+            <text id="name">monster2</text>
+          </attributes>
+          <behaviors>
+            <behavior enabled="true" class="RuleBehavior" id="id350120">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id351961" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">transparent</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="TimerBehavior" id="id753475">
+                  <attributes>
+                    <text id="name">Timer</text>
+                    <text id="bundleName">Timer.behavior</text>
+                    <index id="timerType">1</index>
+                    <real id="interval">
+                      <expression>
+                        <string xml:space="preserve">random(1, 10)</string>
+                      </expression>
+                    </real>
+                    <boolean id="runToCompletion">true</boolean>
+                  </attributes>
+                  <behaviors>
+                    <behavior enabled="true" class="ChangeImageAction" id="id110354">
+                      <attributes>
+                        <text id="name">Change Image</text>
+                        <text id="bundleName">ChangeImage.behavior</text>
+                        <image id="image">monster 2</image>
+                      </attributes>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </behaviors>
+              <elseBehaviors>
+                <behavior enabled="true" class="RuleBehavior" id="id468078">
+                  <attributes>
+                    <text id="name">Rule</text>
+                    <text id="bundleName">Rule.behavior</text>
+                    <real id="compoundConditionKind">0</real>
+                  </attributes>
+                  <conditions>
+                    <condition id="id911873" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <predicate type="string">
+                        <attributes>
+                          <text id="operator">is</text>
+                          <text id="RHS">monster 2</text>
+                        </attributes>
+                      </predicate>
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
+                    </condition>
+                  </conditions>
+                  <behaviors>
+                    <behavior enabled="true" class="TimerBehavior" id="id774268">
+                      <attributes>
+                        <text id="name">Timer</text>
+                        <text id="bundleName">Timer.behavior</text>
+                        <index id="timerType">1</index>
+                        <real id="interval">
+                          <expression>
+                            <string xml:space="preserve">random(1, 6)</string>
+                          </expression>
+                        </real>
+                        <boolean id="runToCompletion">true</boolean>
+                      </attributes>
+                      <behaviors>
+                        <behavior enabled="true" class="ChangeImageAction" id="id491494">
+                          <attributes>
+                            <text id="name">Change Image</text>
+                            <text id="bundleName">ChangeImage.behavior</text>
+                            <image id="image">transparent</image>
+                          </attributes>
+                        </behavior>
+                      </behaviors>
+                    </behavior>
+                  </behaviors>
+                </behavior>
+              </elseBehaviors>
+            </behavior>
+            <behavior enabled="true" class="RuleBehavior" id="id971979">
+              <attributes>
+                <text id="name">Rule</text>
+                <text id="bundleName">Rule.behavior</text>
+                <real id="compoundConditionKind">0</real>
+              </attributes>
+              <conditions>
+                <condition id="id203535" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
+                  <attributes>
+                    <text id="name">default name</text>
+                    <index id="conditionType">0</index>
+                  </attributes>
+                </condition>
+                <condition id="id412213" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <predicate type="string">
+                    <attributes>
+                      <text id="operator">is</text>
+                      <text id="RHS">monster 2</text>
+                    </attributes>
+                  </predicate>
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
+                </condition>
+              </conditions>
+              <behaviors>
+                <behavior enabled="true" class="ChangeAttributeAction" id="id196714">
+                  <attributes>
+                    <text id="name">Change Attribute</text>
+                    <text id="bundleName">ChangeAttribute.behavior</text>
+                    <text id="targetAttribute">game.attributes.id187366</text>
+                    <text id="RHS">
+                      <expression>
+                        <reference keypath="game.attributes.id187366" />
+                        <string xml:space="preserve">+1</string>
+                      </expression>
+                    </text>
+                  </attributes>
+                </behavior>
+                <behavior enabled="true" class="SpawnAction" id="id976071">
+                  <attributes>
+                    <text id="name">Spawn Actor</text>
+                    <text id="bundleName">Spawn.behavior</text>
+                    <text id="prototypeKey">id178230</text>
+                    <angle id="direction">0</angle>
+                    <index id="directionSpace">0</index>
+                    <real id="x">0</real>
+                    <real id="y">0</real>
+                    <index id="positionSpace">0</index>
+                    <index id="layerOrder">0</index>
+                  </attributes>
+                </behavior>
+              </behaviors>
+            </behavior>
+          </behaviors>
+          <aspects>
+            <graphics>
+              <attributes />
+            </graphics>
+            <motion />
+            <physics>
+              <attributes />
+            </physics>
+          </aspects>
+        </actor>
+        <actor id="id630753" prototype="id210755">
+          <attributes>
+            <point id="position">
+              <real id="x">91</real>
+              <real id="y">694.5</real>
+            </point>
+            <size id="size">
+              <real id="width">90</real>
+              <real id="height">85</real>
             </size>
             <angle id="rotation">0</angle>
           </attributes>
@@ -36,8 +1703,8 @@
     <text id="name">Game</text>
     <real id="time">0</real>
     <size id="size">
-      <real id="width">480</real>
-      <real id="height">320</real>
+      <real id="width">1024</real>
+      <real id="height">768</real>
     </size>
     <boolean id="wrapX">false</boolean>
     <boolean id="wrapY">false</boolean>
@@ -57,12 +1724,12 @@
         <real id="y">0</real>
       </point>
       <size id="size">
-        <real id="width">480</real>
-        <real id="height">320</real>
+        <real id="width">1024</real>
+        <real id="height">768</real>
       </size>
       <size id="trackingArea">
-        <real id="width">400</real>
-        <real id="height">260</real>
+        <real id="width">944</real>
+        <real id="height">708</real>
       </size>
       <real id="rotation">0</real>
     </rect>
