@@ -23,7 +23,7 @@
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior enabled="true" class="RuleBehavior" id="id731316">
+    <behavior id="id731316" class="RuleBehavior" enabled="true">
       <attributes>
         <text id="name">Rule</text>
         <text id="bundleName">Rule.behavior</text>
@@ -31,21 +31,21 @@
       </attributes>
       <conditions>
         <condition id="id443832" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.image</text>
+            <text id="name">default name</text>
+          </attributes>
           <predicate type="string">
             <attributes>
               <text id="operator">is</text>
               <text id="RHS">transparent</text>
             </attributes>
           </predicate>
-          <attributes>
-            <index id="conditionType">1</index>
-            <text id="subjectAttribute">self.attributes.image</text>
-            <text id="name">default name</text>
-          </attributes>
         </condition>
       </conditions>
       <behaviors>
-        <behavior enabled="true" class="TimerBehavior" id="id870430">
+        <behavior id="id870430" class="TimerBehavior" enabled="true">
           <attributes>
             <text id="name">Timer</text>
             <text id="bundleName">Timer.behavior</text>
@@ -60,7 +60,7 @@
             <boolean id="runToCompletion">true</boolean>
           </attributes>
           <behaviors>
-            <behavior enabled="true" class="ChangeImageAction" id="id988819">
+            <behavior id="id988819" class="ChangeImageAction" enabled="true">
               <attributes>
                 <text id="name">Change Image</text>
                 <text id="bundleName">ChangeImage.behavior</text>
@@ -71,7 +71,7 @@
         </behavior>
       </behaviors>
       <elseBehaviors>
-        <behavior enabled="true" class="RuleBehavior" id="id979748">
+        <behavior id="id979748" class="RuleBehavior" enabled="true">
           <attributes>
             <text id="name">Rule</text>
             <text id="bundleName">Rule.behavior</text>
@@ -79,21 +79,21 @@
           </attributes>
           <conditions>
             <condition id="id599041" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+              <attributes>
+                <index id="conditionType">1</index>
+                <text id="subjectAttribute">self.attributes.image</text>
+                <text id="name">default name</text>
+              </attributes>
               <predicate type="string">
                 <attributes>
                   <text id="operator">is</text>
                   <text id="RHS">monster 1</text>
                 </attributes>
               </predicate>
-              <attributes>
-                <index id="conditionType">1</index>
-                <text id="subjectAttribute">self.attributes.image</text>
-                <text id="name">default name</text>
-              </attributes>
             </condition>
           </conditions>
           <behaviors>
-            <behavior enabled="true" class="TimerBehavior" id="id433355">
+            <behavior id="id433355" class="TimerBehavior" enabled="true">
               <attributes>
                 <text id="name">Timer</text>
                 <text id="bundleName">Timer.behavior</text>
@@ -108,7 +108,7 @@
                 <boolean id="runToCompletion">true</boolean>
               </attributes>
               <behaviors>
-                <behavior enabled="true" class="ChangeImageAction" id="id376931">
+                <behavior id="id376931" class="ChangeImageAction" enabled="true">
                   <attributes>
                     <text id="name">Change Image</text>
                     <text id="bundleName">ChangeImage.behavior</text>
@@ -121,7 +121,7 @@
         </behavior>
       </elseBehaviors>
     </behavior>
-    <behavior enabled="true" class="RuleBehavior" id="id815237">
+    <behavior id="id815237" class="RuleBehavior" enabled="true">
       <attributes>
         <text id="name">Rule</text>
         <text id="bundleName">Rule.behavior</text>
@@ -129,30 +129,30 @@
       </attributes>
       <conditions>
         <condition id="id227412" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
-          <predicate type="touch" conditionType="pressed">
-            <attributes />
-          </predicate>
           <attributes>
             <text id="name">default name</text>
             <index id="conditionType">0</index>
           </attributes>
+          <predicate type="touch" conditionType="pressed">
+            <attributes />
+          </predicate>
         </condition>
         <condition id="id323306" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+          <attributes>
+            <index id="conditionType">1</index>
+            <text id="subjectAttribute">self.attributes.image</text>
+            <text id="name">default name</text>
+          </attributes>
           <predicate type="string">
             <attributes>
               <text id="operator">is</text>
               <text id="RHS">monster 1</text>
             </attributes>
           </predicate>
-          <attributes>
-            <index id="conditionType">1</index>
-            <text id="subjectAttribute">self.attributes.image</text>
-            <text id="name">default name</text>
-          </attributes>
         </condition>
       </conditions>
       <behaviors>
-        <behavior enabled="true" class="ChangeAttributeAction" id="id310189">
+        <behavior id="id310189" class="ChangeAttributeAction" enabled="true">
           <attributes>
             <text id="name">Change Attribute</text>
             <text id="bundleName">ChangeAttribute.behavior</text>
@@ -165,7 +165,7 @@
             </text>
           </attributes>
         </behavior>
-        <behavior enabled="true" class="SpawnAction" id="id929257">
+        <behavior id="id929257" class="SpawnAction" enabled="true">
           <attributes>
             <text id="name">Spawn Actor</text>
             <text id="bundleName">Spawn.behavior</text>

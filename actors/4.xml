@@ -23,7 +23,7 @@
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior enabled="true" class="RuleBehavior" id="id827780">
+    <behavior id="id827780" class="RuleBehavior" enabled="true">
       <attributes>
         <text id="name">Rule</text>
         <text id="bundleName">Rule.behavior</text>
@@ -31,17 +31,17 @@
       </attributes>
       <conditions>
         <condition id="id789819" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
-          <predicate type="touch" conditionType="pressed">
-            <attributes />
-          </predicate>
           <attributes>
             <text id="name">default name</text>
             <index id="conditionType">0</index>
           </attributes>
+          <predicate type="touch" conditionType="pressed">
+            <attributes />
+          </predicate>
         </condition>
       </conditions>
     </behavior>
-    <behavior enabled="true" class="RuleBehavior" id="id308589">
+    <behavior id="id308589" class="RuleBehavior" enabled="true">
       <attributes>
         <text id="name">Rule</text>
         <text id="bundleName">Rule.behavior</text>
@@ -49,17 +49,17 @@
       </attributes>
       <conditions>
         <condition id="id716316" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
-          <predicate type="touch" conditionType="released">
-            <attributes />
-          </predicate>
           <attributes>
             <text id="name">default name</text>
             <index id="conditionType">0</index>
           </attributes>
+          <predicate type="touch" conditionType="released">
+            <attributes />
+          </predicate>
         </condition>
       </conditions>
       <behaviors>
-        <behavior enabled="true" class="ChangeSceneAction" id="id920512">
+        <behavior id="id920512" class="ChangeSceneAction" enabled="true">
           <attributes>
             <text id="name">Change Scene</text>
             <text id="bundleName">ChangeScene.behavior</text>

@@ -18,7 +18,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -40,7 +43,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -51,7 +57,7 @@
         <actor id="id231803" prototype="id970619">
           <attributes>
             <point id="position">
-              <real id="x">192.5</real>
+              <real id="x">211.5</real>
               <real id="y">693.554726368159</real>
             </point>
             <size id="size">
@@ -62,7 +68,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -84,7 +93,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -106,7 +118,7 @@
             <text id="name">monster3</text>
           </attributes>
           <behaviors>
-            <behavior enabled="true" class="RuleBehavior" id="id728289">
+            <behavior id="id728289" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -114,21 +126,21 @@
               </attributes>
               <conditions>
                 <condition id="id630553" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">transparent</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="TimerBehavior" id="id441215">
+                <behavior id="id441215" class="TimerBehavior" enabled="true">
                   <attributes>
                     <text id="name">Timer</text>
                     <text id="bundleName">Timer.behavior</text>
@@ -141,7 +153,7 @@
                     <boolean id="runToCompletion">true</boolean>
                   </attributes>
                   <behaviors>
-                    <behavior enabled="true" class="ChangeImageAction" id="id173462">
+                    <behavior id="id173462" class="ChangeImageAction" enabled="true">
                       <attributes>
                         <text id="name">Change Image</text>
                         <text id="bundleName">ChangeImage.behavior</text>
@@ -152,7 +164,7 @@
                 </behavior>
               </behaviors>
               <elseBehaviors>
-                <behavior enabled="true" class="RuleBehavior" id="id331143">
+                <behavior id="id331143" class="RuleBehavior" enabled="true">
                   <attributes>
                     <text id="name">Rule</text>
                     <text id="bundleName">Rule.behavior</text>
@@ -160,21 +172,21 @@
                   </attributes>
                   <conditions>
                     <condition id="id206426" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
                       <predicate type="string">
                         <attributes>
                           <text id="operator">is</text>
                           <text id="RHS">monster 3</text>
                         </attributes>
                       </predicate>
-                      <attributes>
-                        <index id="conditionType">1</index>
-                        <text id="subjectAttribute">self.attributes.image</text>
-                        <text id="name">default name</text>
-                      </attributes>
                     </condition>
                   </conditions>
                   <behaviors>
-                    <behavior enabled="true" class="TimerBehavior" id="id179983">
+                    <behavior id="id179983" class="TimerBehavior" enabled="true">
                       <attributes>
                         <text id="name">Timer</text>
                         <text id="bundleName">Timer.behavior</text>
@@ -187,7 +199,7 @@
                         <boolean id="runToCompletion">true</boolean>
                       </attributes>
                       <behaviors>
-                        <behavior enabled="true" class="ChangeImageAction" id="id448574">
+                        <behavior id="id448574" class="ChangeImageAction" enabled="true">
                           <attributes>
                             <text id="name">Change Image</text>
                             <text id="bundleName">ChangeImage.behavior</text>
@@ -200,7 +212,7 @@
                 </behavior>
               </elseBehaviors>
             </behavior>
-            <behavior enabled="true" class="RuleBehavior" id="id892952">
+            <behavior id="id892952" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -208,30 +220,30 @@
               </attributes>
               <conditions>
                 <condition id="id728007" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
-                  <predicate type="touch" conditionType="pressed">
-                    <attributes />
-                  </predicate>
                   <attributes>
                     <text id="name">default name</text>
                     <index id="conditionType">0</index>
                   </attributes>
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
                 </condition>
                 <condition id="id918568" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">monster 3</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="ChangeAttributeAction" id="id317385">
+                <behavior id="id317385" class="ChangeAttributeAction" enabled="true">
                   <attributes>
                     <text id="name">Change Attribute</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
@@ -244,7 +256,7 @@
                     </text>
                   </attributes>
                 </behavior>
-                <behavior enabled="true" class="SpawnAction" id="id998744">
+                <behavior id="id998744" class="SpawnAction" enabled="true">
                   <attributes>
                     <text id="name">Spawn Actor</text>
                     <text id="bundleName">Spawn.behavior</text>
@@ -262,7 +274,10 @@
           </behaviors>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -284,7 +299,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -306,7 +324,7 @@
             <text id="name">monster4</text>
           </attributes>
           <behaviors>
-            <behavior enabled="true" class="RuleBehavior" id="id123349">
+            <behavior id="id123349" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -314,21 +332,21 @@
               </attributes>
               <conditions>
                 <condition id="id110514" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">transparent</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="TimerBehavior" id="id363547">
+                <behavior id="id363547" class="TimerBehavior" enabled="true">
                   <attributes>
                     <text id="name">Timer</text>
                     <text id="bundleName">Timer.behavior</text>
@@ -341,7 +359,7 @@
                     <boolean id="runToCompletion">true</boolean>
                   </attributes>
                   <behaviors>
-                    <behavior enabled="true" class="ChangeImageAction" id="id565984">
+                    <behavior id="id565984" class="ChangeImageAction" enabled="true">
                       <attributes>
                         <text id="name">Change Image</text>
                         <text id="bundleName">ChangeImage.behavior</text>
@@ -352,7 +370,7 @@
                 </behavior>
               </behaviors>
               <elseBehaviors>
-                <behavior enabled="true" class="RuleBehavior" id="id526301">
+                <behavior id="id526301" class="RuleBehavior" enabled="true">
                   <attributes>
                     <text id="name">Rule</text>
                     <text id="bundleName">Rule.behavior</text>
@@ -360,21 +378,21 @@
                   </attributes>
                   <conditions>
                     <condition id="id299998" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
                       <predicate type="string">
                         <attributes>
                           <text id="operator">is</text>
                           <text id="RHS">monster 4</text>
                         </attributes>
                       </predicate>
-                      <attributes>
-                        <index id="conditionType">1</index>
-                        <text id="subjectAttribute">self.attributes.image</text>
-                        <text id="name">default name</text>
-                      </attributes>
                     </condition>
                   </conditions>
                   <behaviors>
-                    <behavior enabled="true" class="TimerBehavior" id="id485648">
+                    <behavior id="id485648" class="TimerBehavior" enabled="true">
                       <attributes>
                         <text id="name">Timer</text>
                         <text id="bundleName">Timer.behavior</text>
@@ -387,7 +405,7 @@
                         <boolean id="runToCompletion">true</boolean>
                       </attributes>
                       <behaviors>
-                        <behavior enabled="true" class="ChangeImageAction" id="id867783">
+                        <behavior id="id867783" class="ChangeImageAction" enabled="true">
                           <attributes>
                             <text id="name">Change Image</text>
                             <text id="bundleName">ChangeImage.behavior</text>
@@ -400,7 +418,7 @@
                 </behavior>
               </elseBehaviors>
             </behavior>
-            <behavior enabled="true" class="RuleBehavior" id="id307483">
+            <behavior id="id307483" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -408,30 +426,30 @@
               </attributes>
               <conditions>
                 <condition id="id490485" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
-                  <predicate type="touch" conditionType="pressed">
-                    <attributes />
-                  </predicate>
                   <attributes>
                     <text id="name">default name</text>
                     <index id="conditionType">0</index>
                   </attributes>
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
                 </condition>
                 <condition id="id676889" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">monster 4</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="ChangeAttributeAction" id="id987485">
+                <behavior id="id987485" class="ChangeAttributeAction" enabled="true">
                   <attributes>
                     <text id="name">Change Attribute</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
@@ -444,7 +462,7 @@
                     </text>
                   </attributes>
                 </behavior>
-                <behavior enabled="true" class="SpawnAction" id="id124226">
+                <behavior id="id124226" class="SpawnAction" enabled="true">
                   <attributes>
                     <text id="name">Spawn Actor</text>
                     <text id="bundleName">Spawn.behavior</text>
@@ -462,7 +480,10 @@
           </behaviors>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -484,7 +505,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -506,7 +530,7 @@
             <text id="name">monster5</text>
           </attributes>
           <behaviors>
-            <behavior enabled="true" class="RuleBehavior" id="id764955">
+            <behavior id="id764955" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -514,21 +538,21 @@
               </attributes>
               <conditions>
                 <condition id="id635433" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">transparent</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="TimerBehavior" id="id874081">
+                <behavior id="id874081" class="TimerBehavior" enabled="true">
                   <attributes>
                     <text id="name">Timer</text>
                     <text id="bundleName">Timer.behavior</text>
@@ -541,7 +565,7 @@
                     <boolean id="runToCompletion">true</boolean>
                   </attributes>
                   <behaviors>
-                    <behavior enabled="true" class="ChangeImageAction" id="id933350">
+                    <behavior id="id933350" class="ChangeImageAction" enabled="true">
                       <attributes>
                         <text id="name">Change Image</text>
                         <text id="bundleName">ChangeImage.behavior</text>
@@ -552,7 +576,7 @@
                 </behavior>
               </behaviors>
               <elseBehaviors>
-                <behavior enabled="true" class="RuleBehavior" id="id644748">
+                <behavior id="id644748" class="RuleBehavior" enabled="true">
                   <attributes>
                     <text id="name">Rule</text>
                     <text id="bundleName">Rule.behavior</text>
@@ -560,21 +584,21 @@
                   </attributes>
                   <conditions>
                     <condition id="id817429" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
                       <predicate type="string">
                         <attributes>
                           <text id="operator">is</text>
                           <text id="RHS">monster 1</text>
                         </attributes>
                       </predicate>
-                      <attributes>
-                        <index id="conditionType">1</index>
-                        <text id="subjectAttribute">self.attributes.image</text>
-                        <text id="name">default name</text>
-                      </attributes>
                     </condition>
                   </conditions>
                   <behaviors>
-                    <behavior enabled="true" class="TimerBehavior" id="id589113">
+                    <behavior id="id589113" class="TimerBehavior" enabled="true">
                       <attributes>
                         <text id="name">Timer</text>
                         <text id="bundleName">Timer.behavior</text>
@@ -587,7 +611,7 @@
                         <boolean id="runToCompletion">true</boolean>
                       </attributes>
                       <behaviors>
-                        <behavior enabled="true" class="ChangeImageAction" id="id786419">
+                        <behavior id="id786419" class="ChangeImageAction" enabled="true">
                           <attributes>
                             <text id="name">Change Image</text>
                             <text id="bundleName">ChangeImage.behavior</text>
@@ -600,7 +624,7 @@
                 </behavior>
               </elseBehaviors>
             </behavior>
-            <behavior enabled="true" class="RuleBehavior" id="id877589">
+            <behavior id="id877589" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -608,30 +632,30 @@
               </attributes>
               <conditions>
                 <condition id="id112450" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
-                  <predicate type="touch" conditionType="pressed">
-                    <attributes />
-                  </predicate>
                   <attributes>
                     <text id="name">default name</text>
                     <index id="conditionType">0</index>
                   </attributes>
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
                 </condition>
                 <condition id="id421437" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">monster 1</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="ChangeAttributeAction" id="id357646">
+                <behavior id="id357646" class="ChangeAttributeAction" enabled="true">
                   <attributes>
                     <text id="name">Change Attribute</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
@@ -644,7 +668,7 @@
                     </text>
                   </attributes>
                 </behavior>
-                <behavior enabled="true" class="SpawnAction" id="id856009">
+                <behavior id="id856009" class="SpawnAction" enabled="true">
                   <attributes>
                     <text id="name">Spawn Actor</text>
                     <text id="bundleName">Spawn.behavior</text>
@@ -662,7 +686,10 @@
           </behaviors>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -684,7 +711,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -706,7 +736,7 @@
             <text id="name">monster6</text>
           </attributes>
           <behaviors>
-            <behavior enabled="true" class="RuleBehavior" id="id752679">
+            <behavior id="id752679" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -714,21 +744,21 @@
               </attributes>
               <conditions>
                 <condition id="id618399" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">transparent</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="TimerBehavior" id="id663746">
+                <behavior id="id663746" class="TimerBehavior" enabled="true">
                   <attributes>
                     <text id="name">Timer</text>
                     <text id="bundleName">Timer.behavior</text>
@@ -741,7 +771,7 @@
                     <boolean id="runToCompletion">true</boolean>
                   </attributes>
                   <behaviors>
-                    <behavior enabled="true" class="ChangeImageAction" id="id655642">
+                    <behavior id="id655642" class="ChangeImageAction" enabled="true">
                       <attributes>
                         <text id="name">Change Image</text>
                         <text id="bundleName">ChangeImage.behavior</text>
@@ -752,7 +782,7 @@
                 </behavior>
               </behaviors>
               <elseBehaviors>
-                <behavior enabled="true" class="RuleBehavior" id="id488513">
+                <behavior id="id488513" class="RuleBehavior" enabled="true">
                   <attributes>
                     <text id="name">Rule</text>
                     <text id="bundleName">Rule.behavior</text>
@@ -760,21 +790,21 @@
                   </attributes>
                   <conditions>
                     <condition id="id587393" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
                       <predicate type="string">
                         <attributes>
                           <text id="operator">is</text>
                           <text id="RHS">monster 2</text>
                         </attributes>
                       </predicate>
-                      <attributes>
-                        <index id="conditionType">1</index>
-                        <text id="subjectAttribute">self.attributes.image</text>
-                        <text id="name">default name</text>
-                      </attributes>
                     </condition>
                   </conditions>
                   <behaviors>
-                    <behavior enabled="true" class="TimerBehavior" id="id157662">
+                    <behavior id="id157662" class="TimerBehavior" enabled="true">
                       <attributes>
                         <text id="name">Timer</text>
                         <text id="bundleName">Timer.behavior</text>
@@ -787,7 +817,7 @@
                         <boolean id="runToCompletion">true</boolean>
                       </attributes>
                       <behaviors>
-                        <behavior enabled="true" class="ChangeImageAction" id="id955406">
+                        <behavior id="id955406" class="ChangeImageAction" enabled="true">
                           <attributes>
                             <text id="name">Change Image</text>
                             <text id="bundleName">ChangeImage.behavior</text>
@@ -800,7 +830,7 @@
                 </behavior>
               </elseBehaviors>
             </behavior>
-            <behavior enabled="true" class="RuleBehavior" id="id193440">
+            <behavior id="id193440" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -808,30 +838,30 @@
               </attributes>
               <conditions>
                 <condition id="id344405" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
-                  <predicate type="touch" conditionType="pressed">
-                    <attributes />
-                  </predicate>
                   <attributes>
                     <text id="name">default name</text>
                     <index id="conditionType">0</index>
                   </attributes>
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
                 </condition>
                 <condition id="id143902" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">monster 2</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="ChangeAttributeAction" id="id896764">
+                <behavior id="id896764" class="ChangeAttributeAction" enabled="true">
                   <attributes>
                     <text id="name">Change Attribute</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
@@ -844,7 +874,7 @@
                     </text>
                   </attributes>
                 </behavior>
-                <behavior enabled="true" class="SpawnAction" id="id798091">
+                <behavior id="id798091" class="SpawnAction" enabled="true">
                   <attributes>
                     <text id="name">Spawn Actor</text>
                     <text id="bundleName">Spawn.behavior</text>
@@ -862,7 +892,10 @@
           </behaviors>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -884,7 +917,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -906,7 +942,7 @@
             <text id="name">monster7</text>
           </attributes>
           <behaviors>
-            <behavior enabled="true" class="RuleBehavior" id="id577337">
+            <behavior id="id577337" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -914,21 +950,21 @@
               </attributes>
               <conditions>
                 <condition id="id728782" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">transparent</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="TimerBehavior" id="id428201">
+                <behavior id="id428201" class="TimerBehavior" enabled="true">
                   <attributes>
                     <text id="name">Timer</text>
                     <text id="bundleName">Timer.behavior</text>
@@ -941,7 +977,7 @@
                     <boolean id="runToCompletion">true</boolean>
                   </attributes>
                   <behaviors>
-                    <behavior enabled="true" class="ChangeImageAction" id="id642818">
+                    <behavior id="id642818" class="ChangeImageAction" enabled="true">
                       <attributes>
                         <text id="name">Change Image</text>
                         <text id="bundleName">ChangeImage.behavior</text>
@@ -952,7 +988,7 @@
                 </behavior>
               </behaviors>
               <elseBehaviors>
-                <behavior enabled="true" class="RuleBehavior" id="id850238">
+                <behavior id="id850238" class="RuleBehavior" enabled="true">
                   <attributes>
                     <text id="name">Rule</text>
                     <text id="bundleName">Rule.behavior</text>
@@ -960,21 +996,21 @@
                   </attributes>
                   <conditions>
                     <condition id="id339343" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
                       <predicate type="string">
                         <attributes>
                           <text id="operator">is</text>
                           <text id="RHS">monster 3</text>
                         </attributes>
                       </predicate>
-                      <attributes>
-                        <index id="conditionType">1</index>
-                        <text id="subjectAttribute">self.attributes.image</text>
-                        <text id="name">default name</text>
-                      </attributes>
                     </condition>
                   </conditions>
                   <behaviors>
-                    <behavior enabled="true" class="TimerBehavior" id="id888802">
+                    <behavior id="id888802" class="TimerBehavior" enabled="true">
                       <attributes>
                         <text id="name">Timer</text>
                         <text id="bundleName">Timer.behavior</text>
@@ -987,7 +1023,7 @@
                         <boolean id="runToCompletion">true</boolean>
                       </attributes>
                       <behaviors>
-                        <behavior enabled="true" class="ChangeImageAction" id="id747494">
+                        <behavior id="id747494" class="ChangeImageAction" enabled="true">
                           <attributes>
                             <text id="name">Change Image</text>
                             <text id="bundleName">ChangeImage.behavior</text>
@@ -1000,7 +1036,7 @@
                 </behavior>
               </elseBehaviors>
             </behavior>
-            <behavior enabled="true" class="RuleBehavior" id="id384314">
+            <behavior id="id384314" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -1008,30 +1044,30 @@
               </attributes>
               <conditions>
                 <condition id="id470236" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
-                  <predicate type="touch" conditionType="pressed">
-                    <attributes />
-                  </predicate>
                   <attributes>
                     <text id="name">default name</text>
                     <index id="conditionType">0</index>
                   </attributes>
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
                 </condition>
                 <condition id="id673450" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">monster 3</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="ChangeAttributeAction" id="id128808">
+                <behavior id="id128808" class="ChangeAttributeAction" enabled="true">
                   <attributes>
                     <text id="name">Change Attribute</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
@@ -1044,7 +1080,7 @@
                     </text>
                   </attributes>
                 </behavior>
-                <behavior enabled="true" class="SpawnAction" id="id297097">
+                <behavior id="id297097" class="SpawnAction" enabled="true">
                   <attributes>
                     <text id="name">Spawn Actor</text>
                     <text id="bundleName">Spawn.behavior</text>
@@ -1062,7 +1098,10 @@
           </behaviors>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -1084,7 +1123,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -1106,7 +1148,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -1128,7 +1173,7 @@
             <text id="name">monster8</text>
           </attributes>
           <behaviors>
-            <behavior enabled="true" class="RuleBehavior" id="id287943">
+            <behavior id="id287943" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -1136,21 +1181,21 @@
               </attributes>
               <conditions>
                 <condition id="id896243" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">transparent</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="TimerBehavior" id="id967117">
+                <behavior id="id967117" class="TimerBehavior" enabled="true">
                   <attributes>
                     <text id="name">Timer</text>
                     <text id="bundleName">Timer.behavior</text>
@@ -1163,7 +1208,7 @@
                     <boolean id="runToCompletion">true</boolean>
                   </attributes>
                   <behaviors>
-                    <behavior enabled="true" class="ChangeImageAction" id="id148121">
+                    <behavior id="id148121" class="ChangeImageAction" enabled="true">
                       <attributes>
                         <text id="name">Change Image</text>
                         <text id="bundleName">ChangeImage.behavior</text>
@@ -1174,7 +1219,7 @@
                 </behavior>
               </behaviors>
               <elseBehaviors>
-                <behavior enabled="true" class="RuleBehavior" id="id411141">
+                <behavior id="id411141" class="RuleBehavior" enabled="true">
                   <attributes>
                     <text id="name">Rule</text>
                     <text id="bundleName">Rule.behavior</text>
@@ -1182,21 +1227,21 @@
                   </attributes>
                   <conditions>
                     <condition id="id629179" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
                       <predicate type="string">
                         <attributes>
                           <text id="operator">is</text>
                           <text id="RHS">monster 4</text>
                         </attributes>
                       </predicate>
-                      <attributes>
-                        <index id="conditionType">1</index>
-                        <text id="subjectAttribute">self.attributes.image</text>
-                        <text id="name">default name</text>
-                      </attributes>
                     </condition>
                   </conditions>
                   <behaviors>
-                    <behavior enabled="true" class="TimerBehavior" id="id272065">
+                    <behavior id="id272065" class="TimerBehavior" enabled="true">
                       <attributes>
                         <text id="name">Timer</text>
                         <text id="bundleName">Timer.behavior</text>
@@ -1209,7 +1254,7 @@
                         <boolean id="runToCompletion">true</boolean>
                       </attributes>
                       <behaviors>
-                        <behavior enabled="true" class="ChangeImageAction" id="id233134">
+                        <behavior id="id233134" class="ChangeImageAction" enabled="true">
                           <attributes>
                             <text id="name">Change Image</text>
                             <text id="bundleName">ChangeImage.behavior</text>
@@ -1222,7 +1267,7 @@
                 </behavior>
               </elseBehaviors>
             </behavior>
-            <behavior enabled="true" class="RuleBehavior" id="id165121">
+            <behavior id="id165121" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -1230,30 +1275,30 @@
               </attributes>
               <conditions>
                 <condition id="id937368" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
-                  <predicate type="touch" conditionType="pressed">
-                    <attributes />
-                  </predicate>
                   <attributes>
                     <text id="name">default name</text>
                     <index id="conditionType">0</index>
                   </attributes>
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
                 </condition>
                 <condition id="id489890" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">monster 4</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="ChangeAttributeAction" id="id699373">
+                <behavior id="id699373" class="ChangeAttributeAction" enabled="true">
                   <attributes>
                     <text id="name">Change Attribute</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
@@ -1266,7 +1311,7 @@
                     </text>
                   </attributes>
                 </behavior>
-                <behavior enabled="true" class="SpawnAction" id="id645364">
+                <behavior id="id645364" class="SpawnAction" enabled="true">
                   <attributes>
                     <text id="name">Spawn Actor</text>
                     <text id="bundleName">Spawn.behavior</text>
@@ -1284,7 +1329,10 @@
           </behaviors>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -1306,7 +1354,7 @@
             <text id="name">monster9</text>
           </attributes>
           <behaviors>
-            <behavior enabled="true" class="RuleBehavior" id="id795144">
+            <behavior id="id795144" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -1314,21 +1362,21 @@
               </attributes>
               <conditions>
                 <condition id="id621151" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">transparent</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="TimerBehavior" id="id371935">
+                <behavior id="id371935" class="TimerBehavior" enabled="true">
                   <attributes>
                     <text id="name">Timer</text>
                     <text id="bundleName">Timer.behavior</text>
@@ -1341,7 +1389,7 @@
                     <boolean id="runToCompletion">true</boolean>
                   </attributes>
                   <behaviors>
-                    <behavior enabled="true" class="ChangeImageAction" id="id313974">
+                    <behavior id="id313974" class="ChangeImageAction" enabled="true">
                       <attributes>
                         <text id="name">Change Image</text>
                         <text id="bundleName">ChangeImage.behavior</text>
@@ -1352,7 +1400,7 @@
                 </behavior>
               </behaviors>
               <elseBehaviors>
-                <behavior enabled="true" class="RuleBehavior" id="id490888">
+                <behavior id="id490888" class="RuleBehavior" enabled="true">
                   <attributes>
                     <text id="name">Rule</text>
                     <text id="bundleName">Rule.behavior</text>
@@ -1360,21 +1408,21 @@
                   </attributes>
                   <conditions>
                     <condition id="id469642" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
                       <predicate type="string">
                         <attributes>
                           <text id="operator">is</text>
                           <text id="RHS">monster 2</text>
                         </attributes>
                       </predicate>
-                      <attributes>
-                        <index id="conditionType">1</index>
-                        <text id="subjectAttribute">self.attributes.image</text>
-                        <text id="name">default name</text>
-                      </attributes>
                     </condition>
                   </conditions>
                   <behaviors>
-                    <behavior enabled="true" class="TimerBehavior" id="id153635">
+                    <behavior id="id153635" class="TimerBehavior" enabled="true">
                       <attributes>
                         <text id="name">Timer</text>
                         <text id="bundleName">Timer.behavior</text>
@@ -1387,7 +1435,7 @@
                         <boolean id="runToCompletion">true</boolean>
                       </attributes>
                       <behaviors>
-                        <behavior enabled="true" class="ChangeImageAction" id="id961466">
+                        <behavior id="id961466" class="ChangeImageAction" enabled="true">
                           <attributes>
                             <text id="name">Change Image</text>
                             <text id="bundleName">ChangeImage.behavior</text>
@@ -1400,7 +1448,7 @@
                 </behavior>
               </elseBehaviors>
             </behavior>
-            <behavior enabled="true" class="RuleBehavior" id="id776753">
+            <behavior id="id776753" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -1408,30 +1456,30 @@
               </attributes>
               <conditions>
                 <condition id="id810140" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
-                  <predicate type="touch" conditionType="pressed">
-                    <attributes />
-                  </predicate>
                   <attributes>
                     <text id="name">default name</text>
                     <index id="conditionType">0</index>
                   </attributes>
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
                 </condition>
                 <condition id="id603299" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">monster 2</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="ChangeAttributeAction" id="id182688">
+                <behavior id="id182688" class="ChangeAttributeAction" enabled="true">
                   <attributes>
                     <text id="name">Change Attribute</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
@@ -1444,7 +1492,7 @@
                     </text>
                   </attributes>
                 </behavior>
-                <behavior enabled="true" class="SpawnAction" id="id132311">
+                <behavior id="id132311" class="SpawnAction" enabled="true">
                   <attributes>
                     <text id="name">Spawn Actor</text>
                     <text id="bundleName">Spawn.behavior</text>
@@ -1462,7 +1510,10 @@
           </behaviors>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -1484,7 +1535,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -1506,7 +1560,7 @@
             <text id="name">monster2</text>
           </attributes>
           <behaviors>
-            <behavior enabled="true" class="RuleBehavior" id="id350120">
+            <behavior id="id350120" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -1514,21 +1568,21 @@
               </attributes>
               <conditions>
                 <condition id="id351961" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">transparent</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="TimerBehavior" id="id753475">
+                <behavior id="id753475" class="TimerBehavior" enabled="true">
                   <attributes>
                     <text id="name">Timer</text>
                     <text id="bundleName">Timer.behavior</text>
@@ -1541,7 +1595,7 @@
                     <boolean id="runToCompletion">true</boolean>
                   </attributes>
                   <behaviors>
-                    <behavior enabled="true" class="ChangeImageAction" id="id110354">
+                    <behavior id="id110354" class="ChangeImageAction" enabled="true">
                       <attributes>
                         <text id="name">Change Image</text>
                         <text id="bundleName">ChangeImage.behavior</text>
@@ -1552,7 +1606,7 @@
                 </behavior>
               </behaviors>
               <elseBehaviors>
-                <behavior enabled="true" class="RuleBehavior" id="id468078">
+                <behavior id="id468078" class="RuleBehavior" enabled="true">
                   <attributes>
                     <text id="name">Rule</text>
                     <text id="bundleName">Rule.behavior</text>
@@ -1560,21 +1614,21 @@
                   </attributes>
                   <conditions>
                     <condition id="id911873" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                      <attributes>
+                        <index id="conditionType">1</index>
+                        <text id="subjectAttribute">self.attributes.image</text>
+                        <text id="name">default name</text>
+                      </attributes>
                       <predicate type="string">
                         <attributes>
                           <text id="operator">is</text>
                           <text id="RHS">monster 2</text>
                         </attributes>
                       </predicate>
-                      <attributes>
-                        <index id="conditionType">1</index>
-                        <text id="subjectAttribute">self.attributes.image</text>
-                        <text id="name">default name</text>
-                      </attributes>
                     </condition>
                   </conditions>
                   <behaviors>
-                    <behavior enabled="true" class="TimerBehavior" id="id774268">
+                    <behavior id="id774268" class="TimerBehavior" enabled="true">
                       <attributes>
                         <text id="name">Timer</text>
                         <text id="bundleName">Timer.behavior</text>
@@ -1587,7 +1641,7 @@
                         <boolean id="runToCompletion">true</boolean>
                       </attributes>
                       <behaviors>
-                        <behavior enabled="true" class="ChangeImageAction" id="id491494">
+                        <behavior id="id491494" class="ChangeImageAction" enabled="true">
                           <attributes>
                             <text id="name">Change Image</text>
                             <text id="bundleName">ChangeImage.behavior</text>
@@ -1600,7 +1654,7 @@
                 </behavior>
               </elseBehaviors>
             </behavior>
-            <behavior enabled="true" class="RuleBehavior" id="id971979">
+            <behavior id="id971979" class="RuleBehavior" enabled="true">
               <attributes>
                 <text id="name">Rule</text>
                 <text id="bundleName">Rule.behavior</text>
@@ -1608,30 +1662,30 @@
               </attributes>
               <conditions>
                 <condition id="id203535" eventType="touch" pluginPredicateTypeIndex="0" class="Touch">
-                  <predicate type="touch" conditionType="pressed">
-                    <attributes />
-                  </predicate>
                   <attributes>
                     <text id="name">default name</text>
                     <index id="conditionType">0</index>
                   </attributes>
+                  <predicate type="touch" conditionType="pressed">
+                    <attributes />
+                  </predicate>
                 </condition>
                 <condition id="id412213" eventType="mouse position" pluginPredicateTypeIndex="0" class="AttributeCondition">
+                  <attributes>
+                    <index id="conditionType">1</index>
+                    <text id="subjectAttribute">self.attributes.image</text>
+                    <text id="name">default name</text>
+                  </attributes>
                   <predicate type="string">
                     <attributes>
                       <text id="operator">is</text>
                       <text id="RHS">monster 2</text>
                     </attributes>
                   </predicate>
-                  <attributes>
-                    <index id="conditionType">1</index>
-                    <text id="subjectAttribute">self.attributes.image</text>
-                    <text id="name">default name</text>
-                  </attributes>
                 </condition>
               </conditions>
               <behaviors>
-                <behavior enabled="true" class="ChangeAttributeAction" id="id196714">
+                <behavior id="id196714" class="ChangeAttributeAction" enabled="true">
                   <attributes>
                     <text id="name">Change Attribute</text>
                     <text id="bundleName">ChangeAttribute.behavior</text>
@@ -1644,7 +1698,7 @@
                     </text>
                   </attributes>
                 </behavior>
-                <behavior enabled="true" class="SpawnAction" id="id976071">
+                <behavior id="id976071" class="SpawnAction" enabled="true">
                   <attributes>
                     <text id="name">Spawn Actor</text>
                     <text id="bundleName">Spawn.behavior</text>
@@ -1662,7 +1716,10 @@
           </behaviors>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>
@@ -1673,7 +1730,7 @@
         <actor id="id630753" prototype="id210755">
           <attributes>
             <point id="position">
-              <real id="x">91</real>
+              <real id="x">117</real>
               <real id="y">694.5</real>
             </point>
             <size id="size">
@@ -1684,7 +1741,10 @@
           </attributes>
           <aspects>
             <graphics>
-              <attributes />
+              <attributes>
+                <integer id="tileWidth" name="tileWidth">0</integer>
+                <integer id="tileHeight" name="tileHeight">0</integer>
+              </attributes>
             </graphics>
             <motion />
             <physics>

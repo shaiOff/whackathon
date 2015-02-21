@@ -23,13 +23,12 @@
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior enabled="true" class="DisplayTextBehavior" id="id837274">
+    <behavior id="id837274" class="DisplayTextBehavior" enabled="true">
       <attributes>
         <text id="name">Display Text</text>
         <text id="bundleName">DisplayText.behavior</text>
         <text id="text">
           <expression>
-            <string />
             <reference keypath="game.attributes.id187366" />
           </expression>
         </text>

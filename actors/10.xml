@@ -23,7 +23,7 @@
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior enabled="true" class="TimerBehavior" id="id737007">
+    <behavior id="id737007" class="TimerBehavior" enabled="true">
       <attributes>
         <text id="name">Timer</text>
         <text id="bundleName">Timer.behavior</text>
@@ -32,7 +32,7 @@
         <boolean id="runToCompletion">false</boolean>
       </attributes>
       <behaviors>
-        <behavior enabled="true" class="DestroyAction" id="id160794">
+        <behavior id="id160794" class="DestroyAction" enabled="true">
           <attributes>
             <text id="name">Destroy</text>
             <text id="bundleName">Destroy.behavior</text>
