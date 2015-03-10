@@ -49,12 +49,10 @@
           <attributes>
             <text id="name">Timer</text>
             <text id="bundleName">Timer.behavior</text>
-            <index id="timerType">1</index>
+            <index id="timerType">0</index>
             <real id="interval">
               <expression>
-                <string xml:space="preserve">random(1, </string>
-                <string xml:space="preserve">10</string>
-                <string xml:space="preserve">)</string>
+                <string xml:space="preserve">random(1,10)</string>
               </expression>
             </real>
             <boolean id="runToCompletion">true</boolean>
@@ -179,6 +177,15 @@
           </attributes>
         </behavior>
       </behaviors>
+    </behavior>
+    <behavior id="id626745" class="TimerBehavior" enabled="false">
+      <attributes>
+        <text id="name">Timer</text>
+        <text id="bundleName">Timer.behavior</text>
+        <index id="timerType">0</index>
+        <real id="interval">1</real>
+        <boolean id="runToCompletion">false</boolean>
+      </attributes>
     </behavior>
   </behaviors>
   <aspects>

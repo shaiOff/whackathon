@@ -23,9 +23,6 @@
     <image name="monster 4">
       <file name="monster 4.png" size="91554" />
     </image>
-    <image name="play again">
-      <file name="play again.png" size="4728" />
-    </image>
     <image name="start">
       <file name="start.png" size="4463" />
     </image>

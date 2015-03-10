@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <game GSCVersion="0.10.5" PGFVersion="0.19" title="Whackathon">
-  <attributes>
-    <text id="name">default name</text>
-    <real id="time">0</real>
-    <size id="displaySize">
-      <real id="width">1024</real>
-      <real id="height">768</real>
-    </size>
-    <text id="actorTags">All</text>
-    <integer id="id187366" name="score">0</integer>
-  </attributes>
   <tags />
   <resolutionIndependence>1</resolutionIndependence>
   <instructions>Add game instructions here.</instructions>
@@ -37,6 +27,11 @@
     <actor id="id210218" />
     <actor id="id733494" />
     <actor id="id210755" />
+    <actor id="id413046" />
+    <actor id="id748083" />
+    <actor id="id517173" />
+    <actor id="id297579" />
+    <actor id="id231061" />
   </prototypes>
   <plugins />
   <scenes>
@@ -44,4 +39,15 @@
     <scene id="id492024" />
     <scene id="id442447" />
   </scenes>
+  <attributes>
+    <text id="name">default name</text>
+    <real id="time">0</real>
+    <size id="displaySize">
+      <real id="width">1024</real>
+      <real id="height">768</real>
+    </size>
+    <text id="actorTags">All</text>
+    <integer id="id187366" name="score">0</integer>
+    <integer id="id873558" name="timer">10</integer>
+  </attributes>
 </game>
