@@ -28,8 +28,8 @@
         <text id="name">Display Text</text>
         <text id="bundleName">DisplayText.behavior</text>
         <text id="text">YOUR SCORE:</text>
-        <text id="font">Arial</text>
-        <real id="size">40</real>
+        <text id="font">Verdana</text>
+        <real id="size">30</real>
         <index id="alignment">1</index>
         <boolean id="wrap">false</boolean>
         <color id="color">

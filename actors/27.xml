@@ -1,62 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<actor id="id413046" PGFVersion="0.19" GSCVersion="0.10.5">
+<actor id="id809310" PGFVersion="0.19" GSCVersion="0.10.5">
   <attributes>
-    <text id="name">game over</text>
+    <text id="name">scored</text>
     <real id="time">0</real>
     <point id="position">
       <real id="x">0</real>
       <real id="y">0</real>
     </point>
     <size id="size">
-      <real id="width">1491</real>
-      <real id="height">1440</real>
+      <real id="width">120</real>
+      <real id="height">120</real>
     </size>
     <angle id="rotation">0</angle>
     <color id="color">
       <real id="red">1</real>
       <real id="green">1</real>
       <real id="blue">1</real>
-      <real id="alpha">1</real>
+      <real id="alpha">0</real>
     </color>
-    <image id="image">game over</image>
+    <image id="image" />
     <text id="tags" />
     <boolean id="preloadArt">true</boolean>
   </attributes>
   <behaviors>
-    <behavior id="id429943" class="TimerBehavior" enabled="true">
+    <behavior id="id112886" class="DisplayTextBehavior" enabled="true">
       <attributes>
-        <text id="name">Timer</text>
-        <text id="bundleName">Timer.behavior</text>
-        <index id="timerType">1</index>
-        <real id="interval">3</real>
-        <boolean id="runToCompletion">true</boolean>
+        <text id="name">Display Text</text>
+        <text id="bundleName">DisplayText.behavior</text>
+        <text id="text">
+          <expression>
+            <reference keypath="game.attributes.id187366" />
+          </expression>
+        </text>
+        <text id="font">Arial</text>
+        <real id="size">60</real>
+        <index id="alignment">1</index>
+        <boolean id="wrap">false</boolean>
+        <color id="color">
+          <real id="red">1</real>
+          <real id="green">1</real>
+          <real id="blue">1</real>
+          <real id="alpha">1</real>
+        </color>
       </attributes>
-      <behaviors>
-        <behavior id="id317038" class="ChangeAttributeAction" enabled="true">
-          <attributes>
-            <text id="name">Change Attribute</text>
-            <text id="bundleName">ChangeAttribute.behavior</text>
-            <text id="targetAttribute">game.attributes.id187366</text>
-            <text id="RHS">0</text>
-          </attributes>
-        </behavior>
-        <behavior id="id543518" class="ChangeAttributeAction" enabled="true">
-          <attributes>
-            <text id="name">Change Attribute</text>
-            <text id="bundleName">ChangeAttribute.behavior</text>
-            <text id="targetAttribute">game.attributes.id873558</text>
-            <text id="RHS">60</text>
-          </attributes>
-        </behavior>
-        <behavior id="id991603" class="ChangeSceneAction" enabled="true">
-          <attributes>
-            <text id="name">Change Scene</text>
-            <text id="bundleName">ChangeScene.behavior</text>
-            <text id="sceneKey">id735300</text>
-            <boolean id="enableAdvertisement">false</boolean>
-          </attributes>
-        </behavior>
-      </behaviors>
     </behavior>
   </behaviors>
   <aspects>
@@ -70,8 +56,8 @@
         <enumeration id="verticalAnchor">0</enumeration>
         <boolean id="flipHorizontally">false</boolean>
         <boolean id="flipVertically">false</boolean>
-        <integer id="tileWidth">1491</integer>
-        <integer id="tileHeight">1440</integer>
+        <integer id="tileWidth">0</integer>
+        <integer id="tileHeight">0</integer>
       </attributes>
     </graphics>
     <motion>

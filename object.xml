@@ -32,6 +32,7 @@
     <actor id="id517173" />
     <actor id="id297579" />
     <actor id="id231061" />
+    <actor id="id809310" />
   </prototypes>
   <plugins />
   <scenes>
@@ -48,6 +49,6 @@
     </size>
     <text id="actorTags">All</text>
     <integer id="id187366" name="score">0</integer>
-    <integer id="id873558" name="timer">10</integer>
+    <integer id="id873558" name="timer">60</integer>
   </attributes>
 </game>
